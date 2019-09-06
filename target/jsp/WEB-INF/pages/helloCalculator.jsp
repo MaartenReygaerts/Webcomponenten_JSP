@@ -12,8 +12,15 @@
 </head>
 <body>
 <h1>Hello Calculator</h1>
-<p>
-    This is a Calculator as you can obviously see!
-</p>
+<form method="POST" action="calculator">
+    ${message} <br/>
+        Result : ${result} <br/>
+    <input type="number" name="number"><br/>
+    <input type="submit" name="operation" value="+">
+    <input type="submit" name="operation" value="-">
+    <input type="submit" name="operation" value="*">
+    <input type="submit" name="operation" value="/">
+    <input type="submit" name="operation" value="CE">
+</form>
 </body>
 </html>
